@@ -1,0 +1,13 @@
+name: scanf
+version: 0.1.0
+
+authors:
+  - Kai Leahy <canhascodez@gmail.com>
+
+targets:
+  scanf:
+    main: src/scanf.cr
+
+crystal: 0.28.0
+
+license: MIT

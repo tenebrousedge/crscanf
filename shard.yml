@@ -8,6 +8,6 @@ targets:
   scanf:
     main: src/scanf.cr
 
-crystal: 0.28.0
+crystal: 0.34.0
 
 license: MIT

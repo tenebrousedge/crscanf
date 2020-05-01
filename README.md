@@ -1,10 +1,19 @@
-# scanf
+# Scanf
 
 This is a Crystal wrapper around the C function `scanf`, specifically `sscanf`. It reads numeric and string data types from other strings. Usefully for Crystal users, it returns scanned data as a tuple with specific types, rather than an array of union types.
 
+[![GitHub release](https://img.shields.io/github/release/tenebrousedge/crscanf.svg)](https://github.com/tenebrousedge/crscanf/releases)
+
 ## Installation
 
-This project will likely be released as a Crystal shard shortly.
+Add `scanf` to your dependencies in your `shard.yml` file:
+```yml
+dependencies:
+  scanf:
+    github: tenebrousedge/crscanf
+    branch: master
+```
+Then run `shards install`.
 
 ## Usage
 
@@ -28,7 +37,7 @@ Various versions of the C `scanf` function may be used to read directly from IO 
 
 ### Warning
 
-`scanf` is a dangerous tool. It can easily result in [undefined behavior](https://en.wiktionary.org/wiki/nasal_demon). Test your format strings carefully.
+`scanf` is a dangerous tool. It can easily result in [undefined behavior](https://en.wiktionary.org/wiki/nasal_demon). Test your format strings carefully. This implementation has at least as many bugs as the C version, and likely more.
 
 ## Development
 
@@ -41,6 +50,8 @@ This shard requires no special libraries, aside from the Crystal compiler. Bugs 
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
+
+At the moment, this shard is not well-tested.
 
 ## Contributors
 

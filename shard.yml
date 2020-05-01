@@ -1,5 +1,6 @@
 name: scanf
 version: 0.1.0
+description: Crystal wrapper for LibC scanf function.
 
 authors:
   - Kai Leahy <canhascodez@gmail.com>
